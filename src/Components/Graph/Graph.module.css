@@ -1,0 +1,14 @@
+.graph {
+    width: 800px;
+    text-align: end;
+    display: flex;
+    justify-content: space-around;
+}
+
+.graphcontainer {
+    height: 350px;
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}

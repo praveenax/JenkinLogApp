@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from "react-router-dom";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import Upload from "./Pages/UploadPage/Upload";
+import Summary from "./Pages/Summary/Summary";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div fluid="lg" style={{ background: 'linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))'}}>
+    <Routes>
+      <Route path="/dashboard" element={<Dashboard />}/>
+      <Route path="/upload" element={<Upload />}/>
+      <Route path="/summary" element={<Summary />}/>
+
+
+
+
+      <Route path="/*" element={<Navigate to="/dashboard" />} />
+    </Routes>
     </div>
+    </>
   );
 }
 

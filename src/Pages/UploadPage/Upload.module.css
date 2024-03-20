@@ -1,0 +1,21 @@
+.nextbutton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next {
+    margin: 20px;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.uploadButton {
+  border: 2px dotted grey;
+  display: inline-block;
+  padding: 150px;
+  margin-top: 20px;
+}
+
+

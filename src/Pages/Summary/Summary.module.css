@@ -1,0 +1,22 @@
+.textbox {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    width: 50%;
+  }
+
+  .textboxcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .backbutton {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .back {
+      margin: 20px;
+  }
